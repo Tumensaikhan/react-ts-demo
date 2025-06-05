@@ -1,0 +1,7 @@
+.input {
+    padding: 6px 2px;
+}
+
+.input[data-error="true"] {
+    border-color: red;
+}

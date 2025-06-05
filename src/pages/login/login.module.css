@@ -1,0 +1,14 @@
+.page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    border: 1px solid rgb(206, 206, 206);
+}
