@@ -21,3 +21,9 @@ export function App() {
 // request:  axios, fetch (browser API)
 // react query  (server state manager) (cache, cacheInvalidate)
 // form         react-hooks-form       
+
+// TODO:
+// request: fetch, axios
+// public api: https://developers.thecatapi.com/
+// image: url talbaraar img tagand zurag bairshuulah
+// cats page - 10n muur zurag nerteigee haragddag
