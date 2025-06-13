@@ -1,5 +1,7 @@
 import { Box, Button, Checkbox, Drawer, Flex, Select, TextInput } from "@mantine/core";
+import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
+import { fetchProducts } from "../products/products";
 
 const carCategories = [
     'Jeep',
@@ -32,9 +34,10 @@ export function Dashboard() {
         }))
     }
 
-    // rerender hiihgui
-    let a = 'text'
-    a = 'bbbbbbbbbb'
+    const { data: dataProducts } = useQuery({
+        queryKey: ['products'],
+        queryFn: () => fetchProducts({ skip: 0, limit: 20 }),
+    })
 
     return (
         <div className="">
@@ -81,9 +84,12 @@ export function Dashboard() {
                     />
                 </Flex>
             </form>
-
             <Box>
                 {JSON.stringify(car)}
+            </Box>
+
+            <Box mt="lg">
+                {JSON.stringify(dataProducts?.products.map(product => product.title))}
             </Box>
         </div>
     )

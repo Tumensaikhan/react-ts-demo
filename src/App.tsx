@@ -17,13 +17,16 @@ export function App() {
 // react router
 // css libraray:  css, css.module,   sass, less    styled-components, emotions,      tailwind
 // component libraray:  material-ui, antd, chakra, mantine, bootstrap,       shadcn
-// global state manager:  localStrage, sessionStroge      redux (reducer, get -> selector, setter -> dispatch),         zustand
+// global state manager:  localStrage, sessionStroge    redux (reducer, get -> selector, setter -> dispatch),      zustand
 // request:  axios, fetch (browser API)
 // react query  (server state manager) (cache, cacheInvalidate)
-// form         react-hooks-form       
+// form       react-hooks-form       
+
+// next lesson:
+// zustand
+// react-hooks-form
+// custom form
 
 // TODO:
-// request: fetch, axios
-// public api: https://developers.thecatapi.com/
-// image: url talbaraar img tagand zurag bairshuulah
-// cats page - 10n muur zurag nerteigee haragddag
+// react-hooks-form -oor form hiij ireerei
+// ajliin anketiin form 8-10 fieldtei
