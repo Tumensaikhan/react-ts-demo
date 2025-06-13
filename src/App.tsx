@@ -29,4 +29,4 @@ export function App() {
 
 // TODO:
 // react-hooks-form -oor form hiij ireerei
-// ajliin anketiin form 8-10 fieldtei
+// ajliin anketiin form 8-10 fieldtei (anket page)

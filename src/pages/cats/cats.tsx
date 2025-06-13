@@ -37,7 +37,7 @@ export function Cats() {
         }
     }
 
-    // creates side-effect, becareful!
+    // creates side-effect, be careful!
     useEffect(() => {
         refetch()
     }, [])

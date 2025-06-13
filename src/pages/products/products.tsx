@@ -56,11 +56,11 @@ export function Products() {
                 <Button variant="light" onClick={() => refetch()}>
                     Refetch
                 </Button>
-                <ActionIcon onClick={() => setPaging(prev => ({ ...prev, skip: Math.max(prev.skip - prev.limit, 0) }))}>
+                <ActionIcon variant="outline" onClick={() => setPaging(prev => ({ ...prev, skip: Math.max(prev.skip - prev.limit, 0) }))}>
                     {'<'}
                 </ActionIcon>
                 {dataProducts?.total}
-                <ActionIcon onClick={() => setPaging(prev => ({ ...prev, skip: Math.min(prev.skip + prev.limit, dataProducts!.total) }))}>
+                <ActionIcon variant="outline" onClick={() => setPaging(prev => ({ ...prev, skip: Math.min(prev.skip + prev.limit, dataProducts!.total) }))}>
                     {'>'}
                 </ActionIcon>
                 {isFetching && <Loader />}
