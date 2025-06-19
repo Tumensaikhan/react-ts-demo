@@ -11,6 +11,9 @@ const sidebarItems = [{
     link: '/cats',
     label: 'Муур'
 }, {
+    link: '/form',
+    label: 'Form'
+}, {
     link: '/login',
     label: 'Гарах'
 }]

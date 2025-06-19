@@ -40,7 +40,7 @@ export function Products() {
         limit: 20,
     })
 
-    const { data: dataProducts, isFetching, isSuccess, isError, refetch } = useQuery({
+    const { data: dataProducts, isFetching, isError, refetch } = useQuery({
         queryKey: ['products', paging.skip, paging.limit],
         queryFn: () => fetchProducts(paging),
     })
